@@ -1,0 +1,147 @@
+
+.searchbar {
+    align-items: center;
+    border-radius: 20px; 
+    border: 1px solid grey;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 5px;
+}
+.searchbar:focus-within{
+    border:3px solid orange;
+}
+
+.sicon {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sicon img {
+    width: 20px; 
+    height: 20px; 
+    opacity: 0.3;
+}
+
+.sicon img:hover {
+    opacity: 1;
+}
+
+.sbar {
+    padding: 10px;
+    border: none;
+    width: 500px;
+    outline: none;
+}
+
+.search{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.loading{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    
+    width:50px;
+}
+.aloading{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50px;
+}
+
+.results{
+
+    display: flex; 
+    max-width: 90%;
+    margin : 20px auto;
+    overflow-x: auto;
+    gap: 10px; 
+    
+}
+
+.nores{
+    background-color: #cfcfcf;
+    text-align: center;
+    padding:15px;
+    border-radius:20px;
+    width:50%;
+    margin:20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.details{
+    display:none;
+    text-align : center;
+    margin : 5px auto;
+    width: 60%;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    border-radius: 10px;
+
+    
+}
+
+#artist_bio{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0%;
+}
+
+#artist_header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    margin-bottom:1px;
+    font-weight: lighter;
+
+}
+#artist_nationality {
+    font-size: 1.5em;
+    margin-top:1px;
+    margin-bottom: 1px;;
+    font-weight: normal;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+
+.artist{
+    background-color: #205375;
+    color: white;
+    padding: 7px;
+    margin: 1px;
+    align-items: center;
+    height: 370px;        
+    min-width: 280px;     
+    flex: 0 0 240px;   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: larger;
+
+}
+
+.artist:hover {
+    background-color: #112B3C;
+    cursor: pointer;
+}
+
+.artist.selected {
+    background-color: #112B3C;
+}
+
+.artist-img {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 260px;         
+    height: 260px;
+    margin-top: 20px;
+}

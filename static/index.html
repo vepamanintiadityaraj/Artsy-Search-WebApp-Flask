@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Search Assignment 2</title>
+    <link rel="stylesheet" href="static/index.css">
+</head>
+<body style="margin: 0;padding: 0;">
+<header style="background-color: #F0F0F0; padding-top: 10px; padding-left: 10px;font-family: Arial, Helvetica, sans-serif;padding-bottom: 10px;font-size: x-large;">
+Artist Search
+</header>
+
+<div class="searchbar">
+    <form class="search" id="artistsearch">
+        <button type="submit" class="sicon" id="sicon">
+            <img src="static/images/search_icon.png">
+        </button>
+        <input type="text" class="sbar" placeholder="Please enter an artist name." required id="name">
+        <button type="reset" class="sicon" id="clear">
+            <img src="static/images/clear_icon.png">
+        </button>
+    
+    </form>
+    
+</div>
+<div id="nores" class="nores" style="display: none">No results found.</div>
+<div class="results" id="results">
+    
+</div>
+<div class="details" id="adets" style="display:none;">
+        <h1 id="artist_header"></h1>
+        <h2 id="artist_nationality"></h2>
+        <p id="artist_bio"></p>
+        <img src="static/images/loading.gif" class="aloading" id="aloading" style="display:none;">
+</div>
+<img src="static/images/loading.gif" class="loading" id="loading" style="display:none;">   
+
+
+
+<footer style="background-color: #1e2a37; padding-top: 10px;padding-bottom: 10px;text-align: center; font-family: Arial, Helvetica, sans-serif;color: white;margin-top: auto;position: fixed; bottom: 0%;width:100%">
+    <a href="https://www.artsy.net"style="color:white;text-emphasis: none;text-decoration: none">Powered by   <img src="static/images/artsy_logo.svg" style="width: 20px;height:20px;">Artsy.</a>
+</footer>
+<script src="static/frontend.js"></script>
+</body>
+</html>
